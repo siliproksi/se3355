@@ -1,0 +1,3 @@
+name: SE3355 E-Commerce
+baseurl: /se3355
+exclude: ['/BACKEND/node_modules/**']

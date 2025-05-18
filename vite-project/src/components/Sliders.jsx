@@ -3,6 +3,19 @@ import { addToRecentProducts } from '../../redux/actions/actions';
 import './Sliders.css'
 import { useEffect } from "react";
 
+import ms1 from '../assets/ms1.webp';
+import ms2 from '../assets/ms2.webp';
+import ms3 from '../assets/ms3.webp';
+import ms4 from '../assets/ms4.webp';
+import ms5 from '../assets/ms5.webp';
+import ms6 from '../assets/ms6.webp';
+import ms7 from '../assets/ms7.webp';
+import ms8 from '../assets/ms8.webp';
+import ms9 from '../assets/ms9.webp';
+import elektronik from '../assets/Elektronik.jpg';
+
+const sliderImages = [ms1, ms2, ms3, ms4, ms5, ms6, ms7, ms8, ms9];
+
 function Sliders() {
 
     const dispatch = useDispatch();
@@ -85,22 +98,22 @@ function Sliders() {
     function renderStaticSlider() {
         const staticSlides = [
             {
-                image: "https://picsum.photos/id/10/800/350",
+                image: sliderImages[0],
                 title: "Kampanya 1",
                 forwardLink: "#"
             },
             {
-                image: "https://picsum.photos/id/20/800/350",
+                image: sliderImages[1],
                 title: "Kampanya 2",
                 forwardLink: "#"
             },
             {
-                image: "https://picsum.photos/id/30/800/350",
+                image: sliderImages[2],
                 title: "Kampanya 3",
                 forwardLink: "#"
             },
             {
-                image: "https://picsum.photos/id/40/800/350",
+                image: sliderImages[3],
                 title: "Kampanya 4",
                 forwardLink: "#"
             }
@@ -262,19 +275,19 @@ function Sliders() {
     function renderStaticElectronicsSlider() {
         const staticElectronics = [
             {
-                img: "https://picsum.photos/id/26/220/220",
+                img: sliderImages[6],
                 title: "Mini Fırın Deluxe",
                 discountedPrice: "7.899,00 TL",
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/96/220/220", 
+                img: sliderImages[7], 
                 title: "Elektrikli Süpürge Pro",
                 discountedPrice: "22.999,00 TL",
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/180/220/220",
+                img: sliderImages[8],
                 title: "Çamaşır Makinesi XXL",
                 discountedPrice: "18.499,00 TL",
                 forwardLink: "#"
@@ -375,7 +388,7 @@ function Sliders() {
                             <div className="carousel-item active">
                                 <div className="slider-split-content">
                                     <div className="slider-image-container">
-                                        <img src="https://picsum.photos/id/10/800/350" className="w-100 h-100 d-block" alt="Loading..." />
+                                        <img src={sliderImages[0]} className="w-100 h-100 d-block" alt="Loading..." />
                                     </div>
                                 </div>
                                 <div className="slide-counter">1/10</div>
@@ -405,7 +418,7 @@ function Sliders() {
                                 <div className="product-deal-card">
                                     <a href="#" target="_blank" style={{ display: 'flex', width: '100%', textDecoration: 'none', color: 'inherit' }}>
                                         <div style={{ width: '45%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 10px' }}>
-                                            <img src="https://picsum.photos/id/26/220/220" alt="Mini Fırın Deluxe" style={{ maxWidth: '100%', height: 'auto', maxHeight: '180px', objectFit: 'contain' }} />
+                                            <img src={sliderImages[6]} alt="Mini Fırın Deluxe" style={{ maxWidth: '100%', height: 'auto', maxHeight: '180px', objectFit: 'contain' }} />
                                         </div>
                                         <div style={{ width: '55%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '10px', height: '100%' }}>
                                             <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '8px' }}>
