@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './QuickLinks.css'
+import { API_BASE_URL } from '../config'
 
 import ql1 from '../assets/ql1.webp';
 import ql2 from '../assets/ql2.webp';
@@ -22,7 +23,7 @@ function QuickLinks() {
 
     const fetchQuickLinks = () => {
         try {
-            fetch('http://localhost:3000/api/quick-links', { signal: AbortSignal.timeout(2000) })
+            fetch(`${API_BASE_URL}/api/quick-links`, { signal: AbortSignal.timeout(2000) })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');

@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { addToRecentProducts } from '../../redux/actions/actions';
 import './Sliders.css'
 import { useEffect } from "react";
+import { API_BASE_URL } from '../config';
 
 import ms1 from '../assets/ms1.webp';
 import ms2 from '../assets/ms2.webp';
@@ -22,7 +23,7 @@ function Sliders() {
 
     function fetchSliderData() {
         try {
-            fetch('http://localhost:3000/api/slider', { signal: AbortSignal.timeout(2000) })
+            fetch(`${API_BASE_URL}/api/slider`, { signal: AbortSignal.timeout(2000) })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -161,7 +162,7 @@ function Sliders() {
 
     function fetchElectronicsProductData() {
         try {
-            fetch('http://localhost:3000/api/electronics-slider', { signal: AbortSignal.timeout(2000) })
+            fetch(`${API_BASE_URL}/api/electronics-slider`, { signal: AbortSignal.timeout(2000) })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
