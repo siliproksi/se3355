@@ -1,0 +1,50 @@
+[
+  {
+    "img": "https://picsum.photos/id/26/300/300",
+    "title": "Akıllı Telefon Pro Max",
+    "discountedPrice": "24.999 TL",
+    "rating": "★★★★☆",
+    "votes": 191,
+    "forwardLink": "https://www.hepsiburada.com/msi-cyborg-15-a13vf-896xtr-intel-core-i5-13420h-16gb-512gb-ssd-rtx4060-freedos-15-6-fhd-144hz-tasinabilir-bilgisayar-pm-HBC00005T8761"
+  },
+  {
+    "img": "https://picsum.photos/id/96/300/300",
+    "title": "Bluetooth Kulaklık",
+    "discountedPrice": "1.299 TL",
+    "rating": "★★★★★",
+    "votes": 126,
+    "forwardLink": "https://www.hepsiburada.com/omo-sivi-active-cold-power-beyazlar-ve-renkliler-icin-camasir-deterjani-1690-ml-pm-HBC000025NEB9"
+  },
+  {
+    "img": "https://picsum.photos/id/119/300/300",
+    "title": "Akıllı Saat Pro",
+    "discountedPrice": "3.499 TL",
+    "rating": 4.7,
+    "votes": 345,
+    "forwardLink": "https://www.hepsiburada.com/thermoad-kendinden-kulplu-granit-20-cm-gri-sahan-pm-HBC00000P7M1R"
+  },
+  {
+    "img": "https://picsum.photos/id/225/300/300",
+    "title": "Dijital Fotoğraf Makinesi",
+    "discountedPrice": "8.750 TL",
+    "rating": "★★★★☆",
+    "votes": 221,
+    "forwardLink": "https://www.hepsiburada.com/red-bull-enerji-icecegi-250-ml-pm-HB000012A1H3"
+  },
+  {
+    "img": "https://picsum.photos/id/180/300/300",
+    "title": "Elektrikli Kahve Makinesi",
+    "discountedPrice": "2.899 TL",
+    "rating": "★★★☆☆",
+    "votes": 87,
+    "forwardLink": "https://www.hepsiburada.com/urban-care-biotin-keratin-sac-dokulmelerine-karsi-sac-bakim-sampuani-350-ml-pm-HBC00008D1365"
+  },
+  {
+    "img": "https://picsum.photos/id/11/300/300",
+    "title": "Kablosuz Şarj Cihazı",
+    "discountedPrice": "549 TL",
+    "rating": "★★★★☆",
+    "votes": 158,
+    "forwardLink": "https://www.hepsiburada.com/schafer-optimal-elektrikli-cay-makinesi-inox-pm-HBC000005UPV9"
+  }
+]

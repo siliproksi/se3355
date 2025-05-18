@@ -1,0 +1,236 @@
+.sliders-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.sliders-row {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-slider-container,
+.secondary-slider-container {
+    padding: 0;
+    height: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-slider-container {
+    width: 65%;
+}
+
+.secondary-slider-container {
+    width: 30%;
+    background-image: url("src/assets/Elektronik.jpg") ;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.electronics-title {
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.electronics-title span {
+    font-size: 2rem;
+}
+
+.product-deal-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 10px 20px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.product-deal-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    max-height: 220px;
+    object-fit: contain;
+    margin-left: 0;
+}
+
+.product-deal-card .text-primary {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.product-deal-card .text-muted {
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.product-deal-card .fw-bold {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 6px 0;
+}
+
+.product-deal-card button {
+    font-size: 1rem;
+    padding: 4px 0;
+    margin-top: 8px;
+}
+
+.carousel {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background-color: #f8f9fa;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    background-color: #f8f9fa;
+    height: 100%;
+    position: relative;
+}
+
+.slider-split-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .d-flex {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slider-caption {
+    background-color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+}
+
+.carousel-caption h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+.slide-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.carousel-indicators {
+    display: none;
+}
