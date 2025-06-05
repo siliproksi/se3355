@@ -1,11 +1,29 @@
 import { useEffect } from 'react';
 import './QuickLinks.css'
+import { API_BASE_URL } from '../config'
+
+import ql1 from '../assets/ql1.webp';
+import ql2 from '../assets/ql2.webp';
+import ql3 from '../assets/ql3.webp';
+import ql4 from '../assets/ql4.webp';
+import ql5 from '../assets/ql5.webp';
+import ql6 from '../assets/ql6.webp';
+import ql7 from '../assets/ql7.webp';
+import ql8 from '../assets/ql8.webp';
+import ql9 from '../assets/ql9.webp';
+import ql10 from '../assets/ql10.webp';
+import ql11 from '../assets/ql11.webp';
+import ql12 from '../assets/ql12.webp';
+
+const quickLinkImages = [
+    ql1, ql2, ql3, ql4, ql5, ql6, ql7, ql8, ql9, ql10, ql11, ql12
+];
 
 function QuickLinks() {
 
     const fetchQuickLinks = () => {
         try {
-            fetch('https://3624-216-158-90-135.ngrok-free.app/api/quick-links', { signal: AbortSignal.timeout(2000) })
+            fetch(`${API_BASE_URL}/api/quick-links`, { signal: AbortSignal.timeout(2000) })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');

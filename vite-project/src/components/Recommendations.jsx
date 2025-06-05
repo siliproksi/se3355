@@ -2,13 +2,26 @@ import { useDispatch } from "react-redux";
 import { addToRecentProducts } from '../../redux/actions/actions';
 import { useEffect } from 'react';
 import './Recommendations.css'
+import { API_BASE_URL } from '../config'
+
+// Import placeholder images for our static products
+import placeholder1 from '../assets/ms1.webp';
+import placeholder2 from '../assets/ms2.webp';
+import placeholder3 from '../assets/ms3.webp';
+import placeholder4 from '../assets/ms4.webp';
+import placeholder5 from '../assets/ms5.webp';
+import placeholder6 from '../assets/ms6.webp';
+
+const placeholderImages = [
+    placeholder1, placeholder2, placeholder3, placeholder4, placeholder5, placeholder6
+];
 
 function Recommendations() {
     const dispatch = useDispatch();
 
     function fetchProducts() {
         try {
-            fetch('https://3624-216-158-90-135.ngrok-free.app/api/products', { signal: AbortSignal.timeout(2000) })
+            fetch(`${API_BASE_URL}/api/products`, { signal: AbortSignal.timeout(2000) })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -79,7 +92,7 @@ function Recommendations() {
     function renderStaticProducts() {
         const staticProducts = [
             {
-                img: "https://picsum.photos/id/26/300/300",
+                img: placeholderImages[0],
                 title: "Akıllı Telefon Pro Max",
                 rating: "★★★★☆",
                 votes: "126",
@@ -87,7 +100,7 @@ function Recommendations() {
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/96/300/300",
+                img: placeholderImages[1],
                 title: "Bluetooth Kulaklık",
                 rating: "★★★★★",
                 votes: "345",
@@ -95,7 +108,7 @@ function Recommendations() {
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/119/300/300",
+                img: placeholderImages[2],
                 title: "Akıllı Saat Pro",
                 rating: "★★★★☆",
                 votes: "221",
@@ -103,7 +116,7 @@ function Recommendations() {
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/225/300/300",
+                img: placeholderImages[3],
                 title: "Dijital Fotoğraf Makinesi",
                 rating: "★★★☆☆",
                 votes: "87",
@@ -111,7 +124,7 @@ function Recommendations() {
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/180/300/300",
+                img: placeholderImages[4],
                 title: "Elektrikli Kahve Makinesi",
                 rating: "★★★★☆",
                 votes: "158",
@@ -119,7 +132,7 @@ function Recommendations() {
                 forwardLink: "#"
             },
             {
-                img: "https://picsum.photos/id/11/300/300",
+                img: placeholderImages[5],
                 title: "Kablosuz Şarj Cihazı",
                 rating: "★★★★★",
                 votes: "412",
@@ -145,7 +158,7 @@ function Recommendations() {
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
                         <div className="product-card">
                             <div className="product-image-container">
-                                <img src="https://picsum.photos/id/26/300/300" className="product-image" alt="Product 1" />
+                                <img src={placeholderImages[0]} className="product-image" alt="Product 1" />
                                 <button className="favorite-btn" aria-label="Add to favorites">♡</button>
                             </div>
                             <div className="product-details">
@@ -165,7 +178,7 @@ function Recommendations() {
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
                         <div className="product-card">
                             <div className="product-image-container">
-                                <img src="https://picsum.photos/id/96/300/300" className="product-image" alt="Product 2" />
+                                <img src={placeholderImages[1]} className="product-image" alt="Product 2" />
                                 <button className="favorite-btn" aria-label="Add to favorites">♡</button>
                             </div>
                             <div className="product-details">
@@ -185,7 +198,7 @@ function Recommendations() {
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
                         <div className="product-card">
                             <div className="product-image-container">
-                                <img src="https://picsum.photos/id/119/300/300" className="product-image" alt="Product 3" />
+                                <img src={placeholderImages[2]} className="product-image" alt="Product 3" />
                                 <button className="favorite-btn" aria-label="Add to favorites">♡</button>
                             </div>
                             <div className="product-details">
@@ -205,7 +218,7 @@ function Recommendations() {
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
                         <div className="product-card">
                             <div className="product-image-container">
-                                <img src="https://picsum.photos/id/225/300/300" className="product-image" alt="Product 4" />
+                                <img src={placeholderImages[3]} className="product-image" alt="Product 4" />
                                 <button className="favorite-btn" aria-label="Add to favorites">♡</button>
                             </div>
                             <div className="product-details">
@@ -225,7 +238,7 @@ function Recommendations() {
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
                         <div className="product-card">
                             <div className="product-image-container">
-                                <img src="https://picsum.photos/id/180/300/300" className="product-image" alt="Product 5" />
+                                <img src={placeholderImages[4]} className="product-image" alt="Product 5" />
                                 <button className="favorite-btn" aria-label="Add to favorites">♡</button>
                             </div>
                             <div className="product-details">
@@ -245,7 +258,7 @@ function Recommendations() {
                     <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
                         <div className="product-card">
                             <div className="product-image-container">
-                                <img src="https://picsum.photos/id/11/300/300" className="product-image" alt="Product 6" />
+                                <img src={placeholderImages[5]} className="product-image" alt="Product 6" />
                                 <button className="favorite-btn" aria-label="Add to favorites">♡</button>
                             </div>
                             <div className="product-details">
