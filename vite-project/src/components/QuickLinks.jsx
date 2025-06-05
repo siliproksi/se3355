@@ -57,8 +57,7 @@ function QuickLinks() {
                 const boxItem = document.createElement("div");
                 boxItem.className = "box-item";
                 
-                const imageUrl = quickLinkImages[index % 12];
-                boxItem.innerHTML = `<a href="${item.forwardLink || '#'}"><img src="${imageUrl}" alt="${item.title || 'Quick Link'}" /></a>`;
+                boxItem.innerHTML = `<a href="${item.forwardLink || '#'}"><img src="/se3355/src/assets/ql${(index % 12) + 1}.webp" alt="${item.title || 'Quick Link'}" /></a>`;
                 container.appendChild(boxItem);
             });
         } catch (error) {
