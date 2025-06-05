@@ -9,7 +9,7 @@ function Sliders() {
 
     function fetchSliderData() {
         try {
-            fetch('http://localhost:3000/api/slider', { signal: AbortSignal.timeout(2000) })
+            fetch('https://3624-216-158-90-135.ngrok-free.app/api/slider', { signal: AbortSignal.timeout(2000) })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
